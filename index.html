@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="current-info">
+        <div class="date-container">
+          <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
+          <div class="date" id="date">Monday,24 May</div>
+          <div class="others" id="current-weather-items">
+            <div class="search">
+              <input
+                class="search_box"
+                id="search_box"
+                type="text"
+                placeholder="Search City"
+              />
+              <button id="search_btn" class="sbtn"></button>
+            </div>
+            <h4>weather in <span id="wi">...</span></h4>
+
+            <div class="weather-item">
+              <div>cloud</div>
+              <img id="cloud"></img>
+            </div>
+
+            <div class="weather-item">
+              <div>Temperature</div>
+              <div><p id="temp">0</p></div>
+            </div>
+
+            <div class="weather-item">
+              <div>Humidity</div>
+              <div><p id="hum">0</p></div>
+            </div>
+            <div class="weather-item">
+              <div>Pressure</div>
+              <div><p id="pres">0</p></div>
+            </div>
+            <div class="weather-item">
+              <div>Wind speed</div>
+              <div><p id="wind">0</p></div>
+            </div>
+
+            <div class="weather-item">
+              <div>Latitude</div>
+              <div><p id="lat">0</p></div>
+            </div>
+
+            <div class="weather-item">
+              <div>Longitude</div>
+              <div><p id="lon">0</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="place-container">
+          <div class="time-zone" id="timezone">...</div>
+          <div id="count" class="country">...</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

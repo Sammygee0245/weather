@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background: url("image/shore2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.date-container .time {
+  font-size: 50px;
+  font-weight: 100;
+  width: 360px;
+}
+
+#am-pm {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.date-container .date {
+  font-size: 30px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search_box {
+  border: 1px solid black;
+  outline: none;
+  width: 270px;
+  height: 35px;
+  border-radius: 50px;
+  font-size: 21px;
+  padding-left: 10px;
+  text-transform: capitalize;
+  background-color: rgba(51, 48, 48, 0.562);
+  color: rgb(226, 226, 226);
+}
+
+.sbtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: white;
+}
+
+#cloud {
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.place-container {
+  text-align: end;
+}
+
+#timezone {
+  font-size: 25px;
+  font-weight: 900;
+  color: black;
+}
+
+.country {
+  font-size: 25px;
+  font-weight: 900;
+  color: black;
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(25, 26, 26, 0.685);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 1px solid white;
+  width: 100%;
+  height: 400px;
+  line-height: 2.7rem;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.weather-item {
+  display: flex;
+  justify-content: space-between;
+}
