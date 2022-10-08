@@ -103,7 +103,7 @@
 }
 
 #temp {
-  font-size: 4rem;
+  font-size: 3.5rem;
   justify-content: space-between;
   margin-right: 2rem;
   color: white;
@@ -164,7 +164,7 @@
 .hum {
   display: flex;
   flex-direction: column;
-  width: 120px;
+  width: 100px;
   height: 200px;
   background-color: rgba(221, 223, 224, 0.856);
   border-radius: 10px;
