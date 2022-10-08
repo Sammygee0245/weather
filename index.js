@@ -7,6 +7,7 @@ let lon = document.querySelector("#lon");
 let tem = document.querySelector("#temp");
 let cld = document.querySelector("#cloud");
 let count = document.querySelector("#count");
+let cod = document.querySelector("#cod");
 
 let searchBtn = document.querySelector("#search_btn");
 
@@ -55,6 +56,9 @@ searchBtn.addEventListener("click", () => {
 
     let country = `${data4.sys.country}`;
     count.innerHTML = country;
+
+    let wd = (`${data4.weather[0].description}`)
+    cod.innerHTML = wd
 
     document.body.style.backgroundImage =
       "url('http://source.unsplash.com/1600x900/?" + name1 + "')";
