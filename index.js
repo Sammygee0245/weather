@@ -7,7 +7,6 @@ let lon = document.querySelector("#lon");
 let tem = document.querySelector("#temp");
 let cld = document.querySelector("#cloud");
 let count = document.querySelector("#count");
-let cod = document.querySelector("#cod");
 
 let searchBtn = document.querySelector("#search_btn");
 
@@ -45,7 +44,6 @@ searchBtn.addEventListener("click", () => {
 
     let temperature = `${data4.main.temp}`;
     tem.innerHTML = temperature + "&degC";
-    document.querySelector("#wi").innerHTML = name1;
 
     let icon4 = `${data4.weather[0].icon}`;
 
@@ -57,12 +55,32 @@ searchBtn.addEventListener("click", () => {
     let country = `${data4.sys.country}`;
     count.innerHTML = country;
 
-    let wd = (`${data4.weather[0].description}`)
-    cod.innerHTML = wd
-
-    document.body.style.backgroundImage =
-      "url('http://source.unsplash.com/1600x900/?" + name1 + "')";
+    let wd = `${data4.weather[0].description}`;
+    document.querySelector("#cod").innerHTML = wd;
   }
 
   getData();
 });
+window.addEventListener("load", () => {
+  document.querySelector(".pre").style.display = "none";
+});
+
+function time() {
+  let dateTime = new Date();
+  let hrs = dateTime.getHours();
+  let min = dateTime.getMinutes();
+  let sec = dateTime.getSeconds();
+  let day = dateTime.toLocaleDateString("en-us", {
+    day: "numeric",
+    weekday: "long",
+    month: "short",
+    year: "2-digit",
+  });
+
+  document.querySelector("#hour").innerHTML = hrs;
+  document.querySelector("#min").innerHTML = min;
+  document.querySelector("#sec").innerHTML = sec;
+  document.querySelector("#day").innerHTML = day;
+}
+
+setInterval(time, 10);

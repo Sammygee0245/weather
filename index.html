@@ -9,74 +9,91 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
   </head>
   <body class="body">
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-md cl1">
-          <div class="search">
-            <input
-              class="search_box"
-              id="search_box"
-              type="text"
-              placeholder="Search City"
-            />
-            <button id="search_btn" class="sbtn"></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-md cl2">
-          <div class="location">
-            <h4>weather in <span id="wi">...</span></h4>
-            <div class="loc">
-              <div class="li"></div>
-              <div><p id="lat">0</p></div>
-              ,
-              <div><p id="lon">0</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-md cl3">
-          <div class="tem">
-            <div><p id="temp">0</p></div>
-            <img id="cloud"></img>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-md cl4">
-          <div class="cc4"> <p id="cod">cloud</p>
-            <div class="time-zone" id="timezone">...</div>
-          <div id="count" class="country">...</div></div>
-           
-        </div>
-      </div>
-
+    <div class="pre">
+      <div class="load"></div>
+      <p>Loading...</p>
+    </div>
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md cl5">
-            <div class="hpw">
-                <div class="hum">
-                    <div>Humidity</div>
-                    <div class="hui"></div>
-                    <div><p id="hum">0</p></div>
-                </div>
-
-                <div class="hum">
-                     <div>Pressure</div>
-                    <div class="pr"></div>
-                    <div><p id="pres">0</p></div>
-                </div>
-
-                <div class="hum">
-                    <div>Wind speed</div>   
-                    <div class="ws"></div>
-                    <div><p id="wind">0</p></div>
-                </div>
+        <div class="col-md grd">
+          <div class="wt">
+            <div class="weth">
+              <h4>the weather</h4>
             </div>
+            <div class="teemp">
+              <p id="temp">0</p>
+              <div class="pl">
+                <p class="display-3 mt-4 mx-3" id="timezone">...</p>
+                <p class="time">
+                  <span id="hour">00</span>:<span id="min">00</span>:<span
+                    id="sec"
+                    >00</span
+                  >:<span id="day">Monday</span>
+                </p>
+              </div>
+              <div class="cldiv mt-5 mx-3">
+                <img id="cloud" alt="cloud" />
+                <p id="cod">...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 grd2">
+          <div class="row">
+            <div class="col-md gr">
+              <div class="search mt-3">
+                <input
+                  class="search_box"
+                  id="search_box"
+                  type="text"
+                  placeholder="Search City"
+                />
+                <button id="search_btn" class="sbtn"></button>
+              </div>
+              <p class="display-6">Accra</p>
+              <p class="display-6">New york</p>
+              <p class="display-6">Carlifonia</p>
+              <p class="display-6">Manchester</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md gr">
+              <div class="hum">
+                <div>Pressure</div>
+                <p id="pres">0</p>
+              </div>
+
+              <div class="hum">
+                <div>Wind speed</div>
+                <p id="wind">0</p>
+              </div>
+
+              <div class="hum">
+                <div>Humidity</div>
+                <p id="hum">0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md gr">
+              <div class="hum">
+                <div>Country</div>
+                <p id="count">...</p>
+              </div>
+
+              <div class="hum">
+                <div>Latitude</div>
+                <p id="lat">0</p>
+              </div>
+
+              <div class="hum">
+                <div>Longitiude</div>
+                <p id="lon">0</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
