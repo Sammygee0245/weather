@@ -7,6 +7,8 @@ let lon = document.querySelector("#lon");
 let tem = document.querySelector("#temp");
 let cld = document.querySelector("#cloud");
 let count = document.querySelector("#count");
+let bod = document.querySelector(".body");
+let tempp = document.querySelector(".teemp");
 
 let searchBtn = document.querySelector("#search_btn");
 
@@ -57,6 +59,32 @@ searchBtn.addEventListener("click", () => {
 
     let wd = `${data4.weather[0].description}`;
     document.querySelector("#cod").innerHTML = wd;
+
+    if (wd == "broken clouds") {
+      bod.style.backgroundImage = "url('pic/broken cloud1.jpg')";
+      bod.style.backgroundRepeat = "no-repeat";
+      bod.style.backgroundPosition = "center";
+      bod.style.backgroundAttachment = "scroll";
+      bod.style.backgroundSize = "cover";
+    } else if (wd == "clear sky") {
+      bod.style.backgroundImage = "url('pic/clear sky.jpg')";
+      bod.style.backgroundRepeat = "no-repeat";
+      bod.style.backgroundPosition = "center";
+      bod.style.backgroundAttachment = "scroll";
+      bod.style.backgroundSize = "cover";
+    } else if (wd == "overcast clouds") {
+      bod.style.backgroundImage = "url('pic/overcast cloud.jpg')";
+      bod.style.backgroundRepeat = "no-repeat";
+      bod.style.backgroundPosition = "center";
+      bod.style.backgroundAttachment = "scroll";
+      bod.style.backgroundSize = "cover";
+    } else {
+      bod.style.backgroundImage = "url('pic/rs2.jpg')";
+      bod.style.backgroundRepeat = "no-repeat";
+      bod.style.backgroundPosition = "center";
+      bod.style.backgroundAttachment = "scroll";
+      bod.style.backgroundSize = "cover";
+    }
   }
 
   getData();
