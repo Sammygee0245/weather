@@ -125,3 +125,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+  .teemp {
+    display: flex;
+    flex-direction: column;
+  }
+}
