@@ -1,11 +1,3 @@
-.body {
-  background-image: url("pic/rs2.jpg");
-  background-position: center;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .pre {
   width: 100%;
   height: 100vh;
@@ -29,8 +21,13 @@
 }
 
 .grd {
-  color: white;
+  color: rgb(255, 255, 255);
   height: 100vh;
+  background-image: url("pic/rs2.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .wt {

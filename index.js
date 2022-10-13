@@ -7,7 +7,7 @@ let lon = document.querySelector("#lon");
 let tem = document.querySelector("#temp");
 let cld = document.querySelector("#cloud");
 let count = document.querySelector("#count");
-let bod = document.querySelector(".body");
+let bod = document.querySelector(".grd");
 let tempp = document.querySelector(".teemp");
 
 let searchBtn = document.querySelector("#search_btn");
@@ -78,6 +78,19 @@ searchBtn.addEventListener("click", () => {
       bod.style.backgroundPosition = "center";
       bod.style.backgroundAttachment = "scroll";
       bod.style.backgroundSize = "cover";
+    } else if (wd == "light rain") {
+      bod.style.backgroundImage = "url('pic/light rain.jpg')";
+      bod.style.backgroundRepeat = "no-repeat";
+      bod.style.backgroundPosition = "center";
+      bod.style.backgroundAttachment = "scroll";
+      bod.style.backgroundSize = "cover";
+    } else if (wd == "moderate rain") {
+      bod.style.backgroundImage = "url('pic/clound5.jpg')";
+      bod.style.backgroundRepeat = "no-repeat";
+      bod.style.backgroundPosition = "center";
+      bod.style.backgroundAttachment = "scroll";
+      bod.style.backgroundSize = "cover";
+      tempp.style.color = "rgb(0, 255, 221)";
     } else {
       bod.style.backgroundImage = "url('pic/rs2.jpg')";
       bod.style.backgroundRepeat = "no-repeat";
